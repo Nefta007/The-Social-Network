@@ -11,12 +11,12 @@ const {
 
 } = require('../../controllers/thoughtController.js');
 
-// /api/courses
+// /api/thoughts
 router.route('/')
     .get(getAllThoughts)
     .post(createThought);
 
-// /api/courses/:courseId
+// /api/thoughts/:thoughtsId
 router
     .route('/:id')
     .get(getSingleThoughtById)
