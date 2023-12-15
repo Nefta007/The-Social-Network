@@ -71,7 +71,7 @@ module.exports = {
         res.status(404).json({ message: 'No user with this id!' });
       }
 
-      res.json(course);
+      res.json(user);
     } catch (err) {
       res.status(500).json(err);
     }
@@ -89,7 +89,7 @@ module.exports = {
         res.status(404).json({ message: 'No user with this id!' });
       }
 
-      res.json(course);
+      res.json(user);
     } catch (err) {
       res.status(500).json(err);
     }
